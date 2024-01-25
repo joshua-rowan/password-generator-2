@@ -2,13 +2,27 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 let password1El = document.getElementById("password1-el")
-
 let password2El = document.getElementById("password2-el")
 
-password1El.textContent = "Password 1"
-password2El.textContent = "Password 2"
+let password1 = ""
+let password2 = ""
+
+function getRandomCharacter() {
+    let randomCharacter = characters[Math.floor(Math.random() * characters.length)]
+    console.log(randomCharacter)
+    return randomCharacter
+}
+
+function newPassword() {
+    let password = getRandomCharacter()
+        return password
+    }
 
 function getRandomPassword() {
-    password1El.textContent = "New Random Password"
-    password2El.textContent = "New Random Password2"
+    password1 = newPassword()
+    password2 = newPassword()
+    password1El.textContent = password1
+    password2El.textContent = password2
 }
+
+getRandomCharacter()
