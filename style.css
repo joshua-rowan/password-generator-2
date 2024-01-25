@@ -32,11 +32,11 @@ body {
 #app-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: #1F2937;
     width: 550px;
     height: 550px;
-    padding: 0 50px;
     border-radius: 15px;
 }
 
@@ -84,6 +84,14 @@ h2 {
     justify-content: space-between;
 }
 
-#results-field {
-    width: 
+.results-field {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 39px; 
+    background-color: #273549;
+    color: #55F991;
+    border-radius: 5px;
 }
