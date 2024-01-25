@@ -1,6 +1,20 @@
 @font-face {
     font-family: "Karla";
     src: url(fonts/Karla-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(fonts/Karla-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter.ttf);
 }
 
 body {
@@ -12,7 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 75px 0;
-    font-family: "Karla";
+    font-family: "Inter";
 }
 
 #app-body {
@@ -24,4 +38,36 @@ body {
     height: 550px;
     padding: 0 50px;
     border-radius: 15px;
+}
+
+h1 {
+    font-family: "Karla";
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-family: "Inter";
+    font-weight: normal;
+    color: #D5D4D8;
+    font-size: 20px;
+}
+
+.green-text {
+    color: #4ADF86
+}
+
+.btn {
+    width: 178px;
+    height: 42px;
+    background-color: #10B981;
+    border: none;
+    font-family: "Inter";
+    font-weight: normal;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
 }
