@@ -7,3 +7,8 @@ let password2El = document.getElementById("password2-el")
 
 password1El.textContent = "Password 1"
 password2El.textContent = "Password 2"
+
+function getRandomPassword() {
+    password1El.textContent = "New Random Password"
+    password2El.textContent = "New Random Password2"
+}
