@@ -1,6 +1,15 @@
 @font-face {
     font-family: "Karla";
     src: url(fonts/Karla-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(fonts/Karla-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: normal
 }
 
 body {
@@ -12,7 +21,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 75px 0;
-    font-family: "Karla";
 }
 
 #app-body {
@@ -24,4 +32,14 @@ body {
     height: 550px;
     padding: 0 50px;
     border-radius: 15px;
+}
+
+h1 {
+    font-family: "Karla";
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.green-text {
+    color: #4ADF86
 }
