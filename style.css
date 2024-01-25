@@ -61,6 +61,11 @@ h2 {
 }
 /* align text left on the button */
 .btn {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 2px;
+    align-items: center;
     width: 178px;
     height: 42px;
     background-color: #10B981;
