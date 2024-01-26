@@ -9,12 +9,14 @@ let password2 = ""
 
 function getRandomCharacter() {
     let randomCharacter = characters[Math.floor(Math.random() * characters.length)]
-    console.log(randomCharacter)
     return randomCharacter
 }
 
 function newPassword() {
-    let password = getRandomCharacter()
+    let password = ""
+    for (let i = 0; i < 15; i++) {
+        password += getRandomCharacter(i)
+    }
         return password
     }
 
@@ -24,5 +26,3 @@ function getRandomPassword() {
     password1El.textContent = password1
     password2El.textContent = password2
 }
-
-getRandomCharacter()
