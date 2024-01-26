@@ -11,6 +11,7 @@ rangeEl.textContent = myRangeEl.value
 myRangeEl.addEventListener("input", (event) => {
     let newRange = event.target.value
     rangeEl.textContent = newRange
+    console.log(myRangeEl.value)
 })
 
 let password1 = ""
@@ -23,7 +24,7 @@ function getRandomCharacter() {
 
 function newPassword() {
     let password = ""
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < myRangeEl.value; i++) {
         password += getRandomCharacter(i)
     }
         return password
