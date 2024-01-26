@@ -3,6 +3,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let password1El = document.getElementById("password1-el")
 let password2El = document.getElementById("password2-el")
+let myRangeEl = document.getElementById("my-range")
+let rangeEl = document.getElementById("range-el")
+
+rangeEl.textContent = myRangeEl.value
+
+myRangeEl.addEventListener("input", (event) => {
+    let newRange = event.target.value
+    rangeEl.textContent = newRange
+    console.log(myRangeEl.value)
+})
 
 let password1 = ""
 let password2 = ""
@@ -14,7 +24,7 @@ function getRandomCharacter() {
 
 function newPassword() {
     let password = ""
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < myRangeEl.value; i++) {
         password += getRandomCharacter(i)
     }
         return password
