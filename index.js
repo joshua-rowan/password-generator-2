@@ -36,3 +36,12 @@ function getRandomPassword() {
     password1El.textContent = password1
     password2El.textContent = password2
 }
+
+password1El.onclick = function() {
+    navigator.clipboard.writeText(password1El.textContent)
+}
+
+password2El.onclick = function() {
+    navigator.clipboard.writeText(password2El.textContent)
+}
+
