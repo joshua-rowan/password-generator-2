@@ -6,11 +6,11 @@ let password2El = document.getElementById("password2-el")
 let myRangeEl = document.getElementById("my-range")
 let rangeEl = document.getElementById("range-el")
 
-rangeEl.textContent = myRangeEl.value
+rangeEl.textContent = " " + myRangeEl.value
 
 myRangeEl.addEventListener("input", (event) => {
     let newRange = event.target.value
-    rangeEl.textContent = newRange
+    rangeEl.textContent = " " + newRange
 })
 
 let password1 = ""
