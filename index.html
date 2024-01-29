@@ -18,6 +18,15 @@
                     <p>Password Length:<output id="range-el"></output></p>
                     <input type="range" min="8" max="50" value="35" id="my-range"/>
                 </div>
+                <div>
+                    <p>Numbers:</p>
+                    <input type="checkbox" id="numbers-switch" class="checkbox" />
+                    <label for="numbers-switch" class="toggle">
+                        <p class="toggle-text">
+                            OFF     ON
+                        </p>
+                    </label>
+                </div>
                 <button class="btn" onclick="getRandomPassword()">Generate passwords</button>
                 <div id="results-div">
                     <p class="results-field" id="password2-el"></p>
