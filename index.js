@@ -5,13 +5,15 @@ let password1El = document.getElementById("password1-el")
 let password2El = document.getElementById("password2-el")
 let myRangeEl = document.getElementById("my-range")
 let rangeEl = document.getElementById("range-el")
+let numberOption = document.getElementById("check-numbers")
 
-rangeEl.textContent = myRangeEl.value
+
+
+rangeEl.textContent = " " + myRangeEl.value
 
 myRangeEl.addEventListener("input", (event) => {
     let newRange = event.target.value
-    rangeEl.textContent = newRange
-    console.log(myRangeEl.value)
+    rangeEl.textContent = " " + newRange
 })
 
 let password1 = ""
@@ -44,4 +46,3 @@ password1El.onclick = function() {
 password2El.onclick = function() {
     navigator.clipboard.writeText(password2El.textContent)
 }
-
