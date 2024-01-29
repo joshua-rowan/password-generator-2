@@ -11,7 +11,6 @@ rangeEl.textContent = myRangeEl.value
 myRangeEl.addEventListener("input", (event) => {
     let newRange = event.target.value
     rangeEl.textContent = newRange
-    console.log(myRangeEl.value)
 })
 
 let password1 = ""
